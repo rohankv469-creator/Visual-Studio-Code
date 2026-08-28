@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2457d6" />
+  <title>PSG iTech Queue</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-mark">P</div><div><strong>PSG iTech</strong><span>Virtual Queue</span></div></div>
+      <nav class="nav-list" aria-label="Primary navigation">
+        <button class="nav-item active" data-view="home"><span class="icon">⌂</span><span data-i18n="nav.home">Home</span></button>
+        <button class="nav-item" data-view="join"><span class="icon">＋</span><span data-i18n="nav.join">Join a queue</span></button>
+        <button class="nav-item" data-view="ticket"><span class="icon">▣</span><span data-i18n="nav.ticket">My ticket</span></button>
+        <button class="nav-item" data-view="history"><span class="icon">↺</span><span data-i18n="nav.history">Queue history</span></button>
+        <button class="nav-item" data-view="admin"><span class="icon">▤</span><span data-i18n="nav.admin">Admin dashboard</span></button>
+      </nav>
+      <div class="sidebar-bottom"><button class="nav-item" data-view="settings"><span class="icon">⚙</span><span data-i18n="nav.settings">Settings</span></button><div class="help-card"><span class="help-dot">?</span><div><strong data-i18n="help.title">Need help?</strong><small data-i18n="help.copy">Ask the student desk</small></div></div></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><button class="mobile-menu" id="menuBtn">☰</button><div class="crumb"><span>PSG iTech</span><b>/</b><strong id="pageTitle">Home</strong></div><div class="top-actions"><button class="lang-switch" id="langBtn">தமிழ்</button><button class="bell" id="bellBtn" aria-label="Notifications">♧<i>3</i></button><div class="avatar">AR</div></div></header>
+      <section id="app" class="content"></section>
+      <input type="hidden" id="email" value="portal-user" />
+      <input type="hidden" id="password" value="portal-access" />
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
